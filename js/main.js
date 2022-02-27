@@ -4,3 +4,5 @@ const navItems = document.getElementById('nav-items');
 hamburger.addEventListener('click', () => {
     navItems.classList.toggle('show');
 });
+
+$('html').css('overflow', 'hidden');

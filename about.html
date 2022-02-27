@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UX/UI Explorers | About</title>
+
+    <!-- Custom Style-->
+    <link rel ="stylesheet" href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+    <!---------------------- Navigation ---------------------->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="./home.html" 
+                    onmouseover="penlogo.src='assets/uxuiPenLogoh.png', textlogo.src='assets/uxuiTextLogoh.png'"
+                    onmouseout="penlogo.src='assets/uxuiPenLogo.png', textlogo.src='assets/uxuiTextLogo.png'">
+                    <img src="assets/uxuiTextLogo.png" id="textlogo"
+                         alt="UX/UI Explorers"
+                         class="textlogo"/>
+                    <img src="assets/uxuiPenLogo.png" id="penlogo"
+                         alt="UX/UI Explorers"
+                         class="penlogo" />
+                    
+                </a>
+                <!-------------- Hamburger Menu --------------->
+                <button class="hamburger" id="hamburger">
+
+                    <img src="assets/hamburger.png"
+                         alt="menu"
+                         class="hamburgerlogo"
+                         onmouseover="this.src='assets/hamburgerh.png'"
+                         onmouseout="this.src='assets/hamburger.png'" />
+                </button>
+                <!-----------x------------------------------------x---------->
+            </div>
+            
+            <div class="nav-items" id="nav-items">
+                <ul class="nav-items-list" id="nav-items-list">
+                    <li class="nav-link"><a href="./home.html">Home</a></li>
+                    <li class="nav-link"><a href="./about.html">Who we are</a></li>
+                    <li class="nav-link"><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----------x----------- Navigation ------------x--------->
+
+
+    <!------------ Main Section ------------>
+
+    <main>
+
+        <!------------ About Us ------------>
+
+        <section class="about-us flex-row">
+            <div class="about-background">
+                <div class="about-column">
+                    <h1>About Us</h1>
+
+                    <img src="./assets/board.jpg" class="board-pic" alt="board">
+                </div>
+                <div class="about-text">
+                <h4>UX/UI Explorers is a student-ran club all about design, user<p>
+                    experience, and user interface. Based at Orange Coast College,<p>
+                    we provide a space for any creative person to join us in events,<p>
+                    workshops, and projects. UX/UI Explorers Club is relatively new,<p>
+                    as it was founded in fall 2021. The people behind it are ambitious<p>
+                    people, and we hope you'll be there to see it. We aim to be creative<p>
+                    and encourage collabortation as we go through learning the user <p> 
+                    experience process together! Any skill level is welcomed. </h4>
+                </div>
+            </div> 
+        </section>
+
+        <!-----x------ Site Title ------x----->
+
+        <!------------ Meet the Board ------------>
+
+        <section>
+            <div class="boardcontainer">
+
+                <div class="board-row">
+
+                <div class="board-content">
+                    <img src="./assets/ann.jpg" class="board-image" alt="ann">
+                    <h3>Ann Tran</h3>
+                    <h4>President</h4>
+                </div>
+                <div class="board-content">
+                    <img src="./assets/jeffrey.jpg" class="board-image" alt="jeffrey">
+                    <h3>Jeffrey Dang</h3>
+                    <h4>Vice President</h4>
+                </div>
+                <div class="board-content">
+                    <img src="./assets/shyra.jpg" class="board-image" alt="shyra">
+                    <h3>Shyra Chapman</h3>
+                    <h4>Secretary</h4>
+                </div>
+                <div class="board-content">
+                    <img src="./assets/vincent.jpg" class="board-image" alt="vincent">
+                    <h3>Vincent Thai</h3>
+                    <h4>Treasurer</h4>
+                </div>
+                </div>
+
+                <div class="board-row">
+                    <div class="board-content">
+                        <img src="./assets/jenny.jpg" class="board-image" alt="jenny">
+                        <h3>Jenny Ly</h3>
+                        <h4>Project Manager</h4>
+                    </div>
+                    <div class="board-content">
+                        <img src="./assets/connor.jpg" class="board-image" alt="connor">
+                        <h3>Connor Hoang</h3>
+                        <h4>Project Manager</h4>
+                    </div>
+                    <div class="board-content">
+                        <img src="./assets/brian.jpg" class="board-image" alt="brian">
+                        <h3>Brian Pham</h3>
+                        <h4>Publicity Board</h4>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <!-----x------ Objectives ------x----->
+
+    </main>
+
+    <!-----x------ Main Section ------x----->
+
+
+    <!------------ Footer ------------>
+    <div class="footer-container">
+        <div class="footer">
+            <div class="social-links">
+
+
+                <!-------- Email -------->
+                <a href="mailto:uxuiocc@gmail.com?subject=">
+                    <img src="assets/mail.png"
+                         alt="email"
+                         class="footer-image"
+                         onmouseover="this.src='assets/mailh.png'"
+                         onmouseout="this.src='assets/mail.png'" />
+                </a>
+
+                <!-------- Discord -------->
+                <a href="https://discord.gg/MZJM7ctBs5"
+                   target="_blank"
+                   rel="noreferrer noopener">
+                    <img src="assets/discord.png"
+                         alt="discord"
+                         class="footer-image"
+                         onmouseover="this.src='assets/discordh.png'"
+                         onmouseout="this.src='assets/discord.png'" />
+                </a>
+
+                <!-------- Instagram -------->
+                <a href="https://www.instagram.com/uxuiocc/"
+                   target="_blank"
+                   rel="noreferrer noopener">
+                    <img src="assets/instagram.png"
+                         alt="instagram"
+                         class="footer-image"
+                         onmouseover="this.src='assets/instagramh.png'"
+                         onmouseout="this.src='assets/instagram.png'" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-----x------ Footer -----x------>
+
+
+    <!-- Jquery Javascript file -->
+    <script src="/js/Jquery3.6.0.min.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UX/UI Explorers | Contact</title>
+
+    <!-- Custom Style-->
+    <link rel ="stylesheet" href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+    <!---------------------- Navigation ---------------------->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="./home.html" 
+                    onmouseover="penlogo.src='assets/uxuiPenLogoh.png', textlogo.src='assets/uxuiTextLogoh.png'"
+                    onmouseout="penlogo.src='assets/uxuiPenLogo.png', textlogo.src='assets/uxuiTextLogo.png'">
+                    <img src="assets/uxuiTextLogo.png" id="textlogo"
+                         alt="UX/UI Explorers"
+                         class="textlogo"/>
+                    <img src="assets/uxuiPenLogo.png" id="penlogo"
+                         alt="UX/UI Explorers"
+                         class="penlogo" />
+                    
+                </a>
+                <!-------------- Hamburger Menu --------------->
+                <button class="hamburger" id="hamburger">
+
+                    <img src="assets/hamburger.png"
+                         alt="menu"
+                         class="hamburgerlogo"
+                         onmouseover="this.src='assets/hamburgerh.png'"
+                         onmouseout="this.src='assets/hamburger.png'" />
+                </button>
+                <!-----------x------------------------------------x---------->
+            </div>
+            
+            <div class="nav-items" id="nav-items">
+                <ul class="nav-items-list" id="nav-items-list">
+                    <li class="nav-link"><a href="./home.html">Home</a></li>
+                    <li class="nav-link"><a href="./about.html">Who we are</a></li>
+                    <li class="nav-link"><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----------x----------- Navigation ------------x--------->
+
+
+    <!------------ Main Section ------------>
+
+    <main>
+
+        <!------------ Contact ------------>
+
+        <section class="site-title flex-row">
+            <div class="site-background">
+                <h1>Join Us</h1>
+                <h4>
+                    We accept applications all year round from all different skill levels. <p>
+                        Feel free to apply any time during the school year!
+                    <p>
+                        Questions? Contact us with
+                        <a href="https://discord.gg/MZJM7ctBs5" style="color:var(--purple)">discord</a>,
+                        <a href="https://www.instagram.com/uxuiocc/" style="color:var(--purple)">instagram</a>, or
+                        <a href="mailto:uxuiocc@gmail.com?subject=" style="color:var(--purple)">email!</a>
+                </h4>
+                <button class="btn"><a href="https://forms.gle/kxxuqiU7WatDMVFs8">Apply Now</a></button>
+            </div>
+        </section>
+
+        <!-----x------ Site Title ------x----->
+        <!------------ Discord ------------>
+
+        <section>
+            <div class="container">
+                <div class="card-content">
+                    <img src="./assets/discordlife.png" class="card-image" alt="discordlife">
+                </div>
+                <h3><p><b>Join our Discord!</b><p> Keep up to date on news<p> Communicate with others<p> Take on Challenges<p> Discover a new passion</h3>
+            </div>
+        </section>
+
+        <!-----x------ Discord ------x----->
+
+    </main>
+
+    <!-----x------ Main Section ------x----->
+
+
+    <!------------ Footer ------------>
+    <div class="footer-container">
+        <div class="footer">
+            <div class="social-links">
+
+
+                <!-------- Email -------->
+                <a href="mailto:uxuiocc@gmail.com?subject=">
+                    <img src="assets/mail.png"
+                         alt="email"
+                         class="footer-image"
+                         onmouseover="this.src='assets/mailh.png'"
+                         onmouseout="this.src='assets/mail.png'" />
+                </a>
+
+                <!-------- Discord -------->
+                <a href="https://discord.gg/MZJM7ctBs5"
+                   target="_blank"
+                   rel="noreferrer noopener">
+                    <img src="assets/discord.png"
+                         alt="discord"
+                         class="footer-image"
+                         onmouseover="this.src='assets/discordh.png'"
+                         onmouseout="this.src='assets/discord.png'" />
+                </a>
+
+                <!-------- Instagram -------->
+                <a href="https://www.instagram.com/uxuiocc/"
+                   target="_blank"
+                   rel="noreferrer noopener">
+                    <img src="assets/instagram.png"
+                         alt="instagram"
+                         class="footer-image"
+                         onmouseover="this.src='assets/instagramh.png'"
+                         onmouseout="this.src='assets/instagram.png'" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-----x------ Footer -----x------>
+
+
+    <!-- Jquery Javascript file -->
+    <script src="/js/Jquery3.6.0.min.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

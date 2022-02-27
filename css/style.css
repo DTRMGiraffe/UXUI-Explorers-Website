@@ -2,12 +2,11 @@
     --gray-black: #1b1b1bff;
     --gray-white: #f2f2f2ff;
     --white: #FFFFFF;
+    --yellow: #F8FF9F;
+    --gold: #FFCE66;
     --purple: #7C5DD3;
-    --space-unit: 8px;
     --size-maxcontent: 1414px;
-    --space-fourunits: 32px;
-    --space-doubleunit: 16px;
-    --space-tripleunit: 24px;
+
 }
 
 html, body {
@@ -32,16 +31,65 @@ ul {
     list-style-type: none;
 }
 
+h1 {
+    font-family: Gemunu Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 104px;
+    letter-spacing: 0.02em;
+} 
+
+h2 {
+    font-family: Gemunu Libre;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 104px;
+    letter-spacing: 0.02em;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 61px;
+    letter-spacing: 0.02em;
+}
+
+h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+}
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    color: var(--gray-white);
+    cursor: pointer;
+}
+
 /*------x------ Global Classes -------x-----*/
 
 /*------------- Navigation Bar -------------*/
 .nav {
     background-color: var(--gray-black);
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    height: 0rem;
+    height: auto;
     min-height: 4rem;
 }
 
@@ -49,7 +97,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: var(--size-maxcontent);
+    
 }
 
 .nav .nav-items {
@@ -57,14 +105,21 @@ ul {
     margin: 0;
 }
 
+.nav-items-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
 .nav .nav-items .nav-link {
-    padding: 0 1rem;
+    margin: 0 2rem;
     font-size: 1.1rem;
     position: relative;
-
+    width: fit-content;
     color: var(--gray-white);
-    margin-right: 1rem;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Montserrat;
     font-weight: 700;
     line-height: 1.55;
@@ -80,31 +135,27 @@ ul {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    position: absolute;
-    right: 30px;
     display: none;
 }
 
-nav.nav-brand a{
+nav .nav-brand a{
     font-size: 1.6rem;
-    padding: 1rem 0;
+    margin: 1rem 0;
     display: block;
-    position: absolute;
-    top: 10px;
 }
 
 .textlogo {
-    width: 100px;
+    width: 75px;
     object-fit: cover;
 }
 
 .penlogo {
-    width: 50px;
+    width: 40px;
     object-fit: cover;
 }
 
 .hamburgerlogo {
-    width: 50px;
+    width: 40px;
     object-fit: cover;
 }
 
@@ -114,73 +165,103 @@ nav.nav-brand a{
     flex-direction: row;
 }
 
-.nav-text {
-    color: var(--gray-white);
-    margin-right: var(--space-tripleunit);
-    font-size: 18px;
-    font-family: Montserrat;
-    font-weight: 700;
-    line-height: 1.55;
-    text-transform: capitalize;
-    text-decoration: none;
-}
+
 /*-----x------- Navigation Bar -------x-----*/
 
 
-/*------------- Viewport less than or equal to 750px -------------*/
+/*------------- Main Section -------------*/
 
-@media only screen and (max-width: 750px) {
-    .nav .nav-items {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-    }
-    .nav .nav-items.show {
-        display: block;
-    }
-
-    .hamburger {
-        display: initial;
-    }
-}
-
-/*-----x------- Viewport less than or equal to 750px -------x-----*/
-
-/*------------- Body -------------*/
-.body-container {
-    width: 100%;
-    display: flex;
-    padding: 48px;
-    max-width: 1400px;
-    min-height: 80vh;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: var(--white);
-}
-
-.big-text {
-    font-family: Gemunu Libre;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 96px;
-    line-height: 104px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    padding-left: 48px
-}
-main.site-title {
-    background: url(/assets/shapes.png);
+/*------------ Site Title ------------*/
+main .site-title {
+    background: url('../assets/shapesBG.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
     height: 110vh;
+    display: flex;
+}
+
+main .site-title .site-background {
+    padding-top: 15rem;
+    padding-left: 10rem;
+    text-align: left;
+}
+
+main .site-title h1, h3 {
+    margin: 0.3rem;
+}
+
+main .site-title .btn {
+    margin-top: 2rem;
+    background: var(--purple);
+}
+
+main .site-title .btn:hover {
+    background: var(--gold);
+    color: var(--gray-black);
+}
+
+/*-----x------ Site Title -----x------*/
+
+/*------------ Objectives ------------*/
+main .container {
+    background: url('../assets/abstractBG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
 
-main.site-title.site-background {
-    padding-top: 10rem;
+main .card-content {
+    margin: 5rem;
 }
-/*-----x------- Body -------x-----*/
+
+main .card-image {
+    width: auto;
+    height: 1000px;
+}
+
+
+/*-----x------ Objectives ------x-----*/
+
+/*------------ Board ------------*/
+main .boardcontainer {
+    background: url('../assets/abstractBG2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 1250px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+main .board-content {
+    margin-right: 4rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+main .board-image {
+    width: auto;
+    height: 400px;
+}
+
+main .board-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+/*-----x------ Board ------x-----*/
+
+
+/*-----x------- Main Section -------x-----*/
 
 
 /*------------- Footer -------------*/
@@ -188,8 +269,6 @@ main.site-title.site-background {
     width: 100%;
     height: 100px;
     display: flex;
-    position: absolute;
-    bottom: 0px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -200,22 +279,14 @@ main.site-title.site-background {
 .footer {
     width: 100%;
     display: flex;
-    position: absolute;
-    bottom: 0px;
     align-items: center;
-    padding-top: var(--space-tripleunit);
-    padding-left: var(--space-tripleunit);
-    padding-right: var(--space-tripleunit);
     flex-direction: row;
-    padding-bottom: var(--space-tripleunit);
     justify-content: center;
 }
 
 .footer-social-links {
     display: flex;
-    margin-top: var(--space-tripleunit);
     align-items: center;
-    margin-bottom: var(--space-tripleunit);
     flex-direction: row;
     justify-content: center;
 }
@@ -224,8 +295,108 @@ main.site-title.site-background {
     width: 24px;
     height: 24px;
     object-fit: cover;
-    margin-right: var(--space-tripleunit);
+    margin-right: 3rem;
     text-decoration: none;
 }
 
 /*------x------ Footer ------x------*/
+
+/*------------- About -------------*/
+
+main .about-us {
+    height: 70vh;
+    display: flex;
+    text-align: left;
+}
+
+main .about-background {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+main .about-column {
+    float: right;
+    padding-left: 10rem;
+}
+
+main .board-pic {
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+}
+
+main .about-text {
+    margin-top: 16rem;
+    margin-left: 10rem;
+}
+main .about-us .btn {
+    background: var(--purple);
+}
+
+main .about-us .btn:hover {
+    background: var(--gold);
+    color: var(--gray-black);
+}
+
+/*------x------ About ------x------*/
+
+/*------------- Viewport less than or equal to 1024px -------------*/
+
+@media only screen and (max-width: 1024px) {
+    .nav .nav-items {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+        .nav .nav-items.show {
+            display: flex;
+        }
+
+    .nav-items-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav .nav-brand {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: initial;
+    }
+
+    main .site-title {
+        background-size: 0px;
+    }
+
+    main .site-title .site-background {
+        padding-left: 5rem;
+    }
+
+/*-----x------- Viewport less than or equal to 1024px -------x-----*/
+
+/*------------- Viewport less than or equal to 480px -------------*/
+
+@media only screen and (max-width: 480px) {
+    .nav {
+        padding: 0.25rem 2rem;
+    }
+
+    .textlogo {
+        width: 50px;
+    }
+
+    .penlogo {
+        width: 25px;
+    }
+
+    .hamburgerlogo {
+        width: 30px;
+    }
+}
+
+/*-----x------- Viewport less than or equal to 480px -------x-----*/
